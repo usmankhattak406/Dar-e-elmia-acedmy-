@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="دارِ علمیہ اکیڈمی — معیاری تعلیم، تربیت اور روشن مستقبل">
+<title>دارِ علمیہ اکیڈمی | Dar-E-Elmia Academy</title>
+<style>
+:root{--navy:#092b52;--blue:#12639a;--sky:#eaf5ff;--gold:#d6a93a;--text:#172033;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Tahoma,"Noto Nastaliq Urdu",Arial,sans-serif;background:#f7fafc;color:var(--text);line-height:1.9}
+a{text-decoration:none;color:inherit}
+.top{background:#061d35;color:#dbeafe;padding:7px 6%;font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 3px 18px #0001;padding:14px 6%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:50px;height:50px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:bold;font-size:19px;border:3px solid var(--gold)}
+.brand h1{font-size:22px;color:var(--navy);line-height:1.3}.brand small{color:var(--muted);font-size:11px}
+nav{display:flex;gap:4px;flex-wrap:wrap}nav a{padding:8px 10px;border-radius:7px;font-size:14px}nav a:hover{background:var(--sky);color:var(--blue)}
+.hero{min-height:590px;display:grid;place-items:center;text-align:center;padding:70px 7%;background:linear-gradient(135deg,#e9f5ff,#fff 55%,#f7edcf);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#12639a12;left:-130px;top:-100px}
+.hero-content{max-width:850px;position:relative}
+.badge{display:inline-block;background:#fff;border:1px solid #dbeafe;color:var(--blue);padding:5px 15px;border-radius:30px;font-size:14px;margin-bottom:14px}
+.hero h2{font-size:48px;color:var(--navy);line-height:1.35}.hero h2 span{color:var(--blue)}
+.hero p{font-size:19px;color:#526173;max-width:700px;margin:15px auto}
+.btn{display:inline-block;padding:12px 25px;border-radius:8px;font-weight:bold;margin:7px;cursor:pointer;border:0;font-size:15px}
+.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--navy);border:1px solid #cbd5e1}
+section{padding:70px 7%}.section-head{text-align:center;max-width:720px;margin:0 auto 35px}.section-head h2{font-size:32px;color:var(--navy)}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #e7edf4;border-radius:15px;padding:25px;box-shadow:0 7px 25px #092b520b}
+.card .icon{font-size:32px;margin-bottom:7px}.card h3{color:var(--navy);margin-bottom:5px}.card p{color:var(--muted);font-size:14px}
+.stats{background:var(--navy);color:#fff;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:32px 7%;text-align:center}.stats strong{font-size:30px;color:#fff}.stats span{display:block;color:#cbdbea;font-size:13px}
+.alt{background:#eef6fc}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{text-align:center}.num{margin:auto auto 12px;width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-weight:bold}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px #0000000b}th,td{padding:14px;border-bottom:1px solid #e5e7eb;text-align:right}th{background:var(--navy);color:#fff}td{font-size:14px}
+.notice{background:#fff8e5;border-right:5px solid var(--gold);padding:18px;border-radius:10px;margin-bottom:25px}
+.form-wrap{max-width:900px;margin:auto;background:#fff;padding:30px;border-radius:16px;box-shadow:0 8px 30px #0001}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field label{display:block;font-size:13px;font-weight:bold;margin-bottom:5px;color:var(--navy)}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #d6dee8;border-radius:7px;font-family:inherit}.field textarea{min-height:100px;resize:vertical}.full{grid-column:1/-1}
+.contact{background:var(--navy);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#cbd5e1}.contact-card{background:#fff;color:var(--text);padding:24px;border-radius:13px}.contact-card h3{color:var(--navy)}
+footer{background:#061d35;color:#cbd5e1;padding:35px 7% 15px}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}.footgrid h3{color:#fff;margin-bottom:8px}.copy{text-align:center;border-top:1px solid #ffffff18;margin-top:25px;padding-top:15px;font-size:12px}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:50;align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modalbox{background:#fff;max-width:520px;width:100%;padding:30px;border-radius:15px;text-align:center}.close{float:left;border:0;background:none;font-size:25px;cursor:pointer}
+@media(max-width:850px){header{align-items:flex-start;flex-direction:column}nav{width:100%;justify-content:center}.hero h2{font-size:36px}.stats{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.footgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.top{display:none}.hero{min-height:520px}.hero h2{font-size:29px}.hero p{font-size:16px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.stats{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.footgrid{grid-template-columns:1fr}section{padding:50px 5%}}
+.en{direction:ltr;font-family:Arial,sans-serif;font-weight:500}.bilingual{display:block}.bilingual .en{display:block;font-size:.78em;color:var(--muted);line-height:1.45}.principal{margin-top:8px;font-weight:bold;color:var(--blue)}
+@media(max-width:560px){.bilingual .en{font-size:.8em}}
+</style>
+</head>
+<body>
+
+<div class="top"><span>📞 03345034355</span><span>✉️ dareelmia786@gmail.com</span><span>داخلے جاری ہیں — Admissions Open</span></div>
+
+<header>
+<div class="brand">
+<div class="logo">د ع</div>
+<div><h1>دارِ علمیہ اکیڈمی</h1><small>Dar-E-Elmia Academy</small></div>
+</div>
+<nav>
+<a href="#home">ہوم <span class="en">Home</span></a>
+<a href="#about">ہمارے بارے میں <span class="en">About Us</span></a>
+<a href="#classes">کلاسز <span class="en">Classes</span></a>
+<a href="#admission">داخلہ <span class="en">Admission</span></a>
+<a href="#fees">فیس <span class="en">Fee</span></a>
+<a href="#students">طلبہ <span class="en">Students</span></a>
+<a href="#contact">رابطہ <span class="en">Contact</span></a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="badge">تعلیم • تربیت • کامیابی <span class="en">Education • Character • Success</span></div>
+<h2>دارِ علمیہ اکیڈمی میں<br><span>آپ کے بچے کا روشن مستقبل</span><br><span class="en">A Bright Future for Your Child</span></h2>
+<p>معیاری تعلیم، بہترین تربیت اور محفوظ تعلیمی ماحول — بچوں کو اعتماد، علم اور کامیابی کے لیے تیار کرنے کا ہمارا عزم۔<br><span class="en">Quality education, excellent character building and a safe learning environment — preparing students with knowledge, confidence and skills for success.</span></p>
+<div class="principal">پرنسپل: تاج محمد <span class="en">Principal: Taj Muhammad</span></div>
+<a class="btn primary" href="#admission">آن لائن داخلہ <span class="en">Online Admission</span></a>
+<a class="btn secondary" href="#classes">کلاسز دیکھیں <span class="en">View Classes</span></a>
+</div>
+</section>
+
+<div class="stats">
+<div><strong>100+</strong><span>طلبہ</span></div><div><strong>10+</strong><span>اساتذہ</span></div><div><strong>Second Year</strong><span>تک کلاسز / Classes up to Second Year</span></div><div><strong>100%</strong><span>توجہ برائے طلبہ</span></div>
+</div>
+
+<section id="about">
+<div class="section-head"><h2>ہمارے بارے میں <span class="en">About Us</span></h2><p>دارِ علمیہ اکیڈمی کا مقصد بچوں کو علم کے ساتھ اچھے اخلاق، اعتماد اور عملی صلاحیتیں فراہم کرنا ہے۔<br><span class="en">Dar-E-Elmia Academy aims to provide students with knowledge, good character, confidence and practical skills.</span></p></div>
+<div class="grid">
+<div class="card"><div class="icon">📚</div><h3>معیاری تعلیم <span class="en">Quality Education</span></h3><p>طلبہ کی عمر اور جماعت کے مطابق منظم تعلیمی نظام۔<br><span class="en">A structured learning system according to students' class and needs.</span></p></div>
+<div class="card"><div class="icon">🌱</div><h3>کردار سازی <span class="en">Character Building</span></h3><p>اخلاق، نظم و ضبط اور ذمہ داری پر خصوصی توجہ۔<br><span class="en">Special focus on manners, discipline and responsibility.</span></p></div>
+<div class="card"><div class="icon">👩‍🏫</div><h3>تجربہ کار اساتذہ <span class="en">Experienced Teachers</span></h3><p>طلبہ کی سمجھ اور انفرادی ضرورت کے مطابق رہنمائی۔<br><span class="en">Guidance according to students' understanding and individual needs.</span></p></div>
+<div class="card"><div class="icon">🛡️</div><h3>محفوظ ماحول <span class="en">Safe Environment</span></h3><p>پرسکون، باادب اور بچوں کے لیے سازگار تعلیمی ماحول۔<br><span class="en">A peaceful, respectful and student-friendly learning environment.</span></p></div>
+</div>
+</section>
+
+<section class="alt" id="classes">
+<div class="section-head"><h2>کلاسز اور پروگرامز <span class="en">Classes & Programs</span></h2><p>پری اسکول سے سیکنڈ ایئر تک معیاری تعلیمی رہنمائی۔<br><span class="en">Quality academic support from Pre-School up to Second Year.</span></p></div>
+<div class="grid">
+<div class="card"><h3>پری اسکول <span class="en">Pre-School</span></h3><p>ابتدائی تعلیم، بنیادی مہارتیں اور سرگرمیوں کے ذریعے سیکھنا۔<br><span class="en">Early learning, basic skills and activity-based learning.</span></p></div>
+<div class="card"><h3>پرائمری کلاسز <span class="en">Primary Classes</span></h3><p>بنیادی مضامین، ہوم ورک سپورٹ اور تصوراتی تعلیم۔<br><span class="en">Core subjects, homework support and concept-based learning.</span></p></div>
+<div class="card"><h3>مڈل کلاسز <span class="en">Middle Classes</span></h3><p>مضامین کی مضبوط بنیاد اور امتحانی تیاری۔<br><span class="en">Strong subject foundations and exam preparation.</span></p></div>
+<div class="card"><h3>میٹرک <span class="en">Matric</span></h3><p>امتحان، ریویژن، ٹیسٹ اور کمزور مضامین پر خصوصی توجہ۔<br><span class="en">Exam preparation, revision, tests and special support for weak subjects.</span></p></div>
+<div class="card"><h3>انٹرمیڈیٹ فرسٹ ایئر <span class="en">First Year</span></h3><p>فرسٹ ایئر کے مضامین، ٹیسٹ اور امتحانی تیاری۔<br><span class="en">First Year subjects, tests and exam preparation.</span></p></div>
+<div class="card"><h3>انٹرمیڈیٹ سیکنڈ ایئر <span class="en">Second Year</span></h3><p>سیکنڈ ایئر کے مضامین، ریویژن اور بورڈ امتحان کی تیاری۔<br><span class="en">Second Year subjects, revision and board exam preparation.</span></p></div>
+<div class="card"><h3>قرآن و اسلامی تعلیمات <span class="en">Quran & Islamic Studies</span></h3><p>قرآنِ کریم، بنیادی دینی معلومات اور اخلاقی تربیت۔<br><span class="en">Quran, basic Islamic knowledge and moral education.</span></p></div>
+<div class="card"><h3>ٹیسٹ پریپ <span class="en">Test Preparation</span></h3><p>روزانہ پریکٹس، ہفتہ وار ٹیسٹ اور کارکردگی کا جائزہ۔<br><span class="en">Daily practice, weekly tests and performance review.</span></p></div>
+</div>
+</section>
+
+<section>
+<div class="section-head"><h2>داخلہ کیسے لیں؟</h2><p>صرف چند آسان مراحل میں درخواست جمع کریں۔</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>آن لائن فارم</h3><p>داخلہ فارم مکمل کریں۔</p></div>
+<div class="step"><div class="num">2</div><h3>رابطہ</h3><p>اکیڈمی کی ٹیم آپ سے رابطہ کرے گی۔</p></div>
+<div class="step"><div class="num">3</div><h3>تشخیصی ملاقات</h3><p>طالب علم کی تعلیمی سطح کا جائزہ۔</p></div>
+<div class="step"><div class="num">4</div><h3>داخلہ مکمل</h3><p>فیس اور ضروری دستاویزات جمع کرائیں۔</p></div>
+</div>
+</section>
+
+<section class="alt" id="fees">
+<div class="section-head"><h2>فیس کا ڈھانچہ <span class="en">Fee Structure</span></h2><p>یہ نمونہ فیس ہے؛ اصل فیس آپ اپنی اکیڈمی کے مطابق تبدیل کر سکتے ہیں۔<br><span class="en">Sample fee structure; actual fees can be adjusted by the academy.</span></p></div>
+<table>
+<tr><th>پروگرام</th><th>داخلہ فیس</th><th>ماہانہ فیس</th><th>ٹیسٹ / دیگر</th></tr>
+<tr><td>پری اسکول</td><td>2,000 روپے</td><td>3,000 روپے</td><td>500 روپے</td></tr>
+<tr><td>پرائمری</td><td>2,000 روپے</td><td>3,500 روپے</td><td>500 روپے</td></tr>
+<tr><td>مڈل</td><td>2,500 روپے</td><td>4,000 روپے</td><td>500 روپے</td></tr>
+<tr><td>میٹرک تیاری</td><td>3,000 روپے</td><td>5,000 روپے</td><td>750 روپے</td></tr>
+</table>
+</section>
+
+<section id="students">
+<div class="section-head"><h2>طلبہ اور والدین کے لیے</h2><p>تعلیمی ترقی کو باقاعدگی سے مانیٹر کرنے کے لیے ضروری سہولیات۔</p></div>
+<div class="grid">
+<div class="card"><div class="icon">📊</div><h3>کارکردگی رپورٹ</h3><p>ٹیسٹ اور کلاس ورک کی بنیاد پر طالب علم کی پیش رفت کا جائزہ۔</p></div>
+<div class="card"><div class="icon">📝</div><h3>ہوم ورک سپورٹ</h3><p>طلبہ کو روزانہ کے کام اور مشکل مضامین میں رہنمائی۔</p></div>
+<div class="card"><div class="icon">📢</div><h3>اعلانات</h3><p>چھٹیوں، ٹیسٹ، تقریبات اور اہم نوٹس کی بروقت اطلاع۔</p></div>
+<div class="card"><div class="icon">👨‍👩‍👧</div><h3>والدین سے رابطہ</h3><p>والدین کو بچے کی حاضری اور تعلیمی کارکردگی سے آگاہ رکھنا۔</p></div>
+</div>
+</section>
+
+<section id="admission" class="alt">
+<div class="section-head"><h2>آن لائن داخلہ فارم <span class="en">Online Admission Form</span></h2><p>درخواست جمع کرنے کے لیے نیچے دی گئی معلومات درج کریں۔<br><span class="en">Fill in the information below to submit your admission request.</span></p></div>
+<div class="notice">⚠️ یہ ویب سائٹ کا ڈیمو فارم ہے۔ فارم جمع ہونے کے بعد فی الحال کوئی حقیقی ڈیٹا سرور پر محفوظ نہیں ہوگا۔<br><span class="en">This is a demo form. No real data will currently be stored on a server.</span></div>
+<div class="form-wrap">
+<form onsubmit="submitForm(event)">
+<div class="form-grid">
+<div class="field"><label>طالب علم کا نام *</label><input id="sname" required placeholder="مثلاً محمد احمد"></div>
+<div class="field"><label>والد / سرپرست کا نام *</label><input required placeholder="والد کا نام"></div>
+<div class="field"><label>عمر *</label><input type="number" min="3" max="30" required placeholder="عمر"></div>
+<div class="field"><label>جس کلاس میں داخلہ چاہیے *</label><select required><option value="">منتخب کریں</option><option>پری اسکول / Pre-School</option><option>پرائمری / Primary</option><option>مڈل / Middle</option><option>میٹرک / Matric</option><option>فرسٹ ایئر / First Year</option><option>سیکنڈ ایئر / Second Year</option><option>قرآن و اسلامی تعلیمات / Quran & Islamic Studies</option></select></div>
+<div class="field"><label>والد / سرپرست کا فون نمبر *</label><input type="tel" required placeholder="03XX-XXXXXXX"></div>
+<div class="field"><label>پچھلے اسکول / اکیڈمی کا نام</label><input placeholder="اختیاری"></div>
+<div class="field full"><label>پتہ</label><textarea placeholder="گھر کا پتہ"></textarea></div>
+<div class="field full"><button class="btn primary" type="submit">داخلہ درخواست جمع کریں</button></div>
+</div>
+</form>
+</div>
+</section>
+
+<section>
+<div class="section-head"><h2>اکیڈمی کے اوقات <span class="en">Academy Timings</span></h2><p>تعلیمی اوقات روزانہ شام 3 بجے سے 6 بجے تک ہیں۔<br><span class="en">Academy classes are held daily from 3:00 PM to 6:00 PM.</span></p></div>
+<div class="grid">
+<div class="card"><h3>پیر تا ہفتہ <span class="en">Monday to Saturday</span></h3><p>شام 3:00 بجے تا 6:00 بجے<br><span class="en">3:00 PM to 6:00 PM</span></p></div>
+<div class="card"><h3>اتوار <span class="en">Sunday</span></h3><p>چھٹی<br><span class="en">Closed</span></p></div>
+<div class="card"><h3>پرنسپل <span class="en">Principal</span></h3><p>تاج محمد<br><span class="en">Taj Muhammad</span></p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-head"><h2>ہم سے رابطہ کریں <span class="en">Contact Us</span></h2><p>داخلہ، فیس، کلاسز یا کسی بھی معلومات کے لیے رابطہ کریں۔<br><span class="en">Contact us for admission, fees, classes or any information.</span></p></div>
+<div class="grid">
+<div class="contact-card"><h3>📞 فون <span class="en">Phone</span></h3><p>03345034355</p></div>
+<div class="contact-card"><h3>✉️ ای میل <span class="en">Email</span></h3><p>dareelmia786@gmail.com</p></div>
+<div class="contact-card"><h3>📍 پتہ <span class="en">Address</span></h3><p>آپ کا اکیڈمی ایڈریس یہاں شامل کیا جائے گا۔<br><span class="en">Academy address will be added here.</span></p></div>
+<div class="contact-card"><h3>👤 پرنسپل <span class="en">Principal</span></h3><p>تاج محمد<br><span class="en">Taj Muhammad</span></p></div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footgrid">
+<div><h3>دارِ علمیہ اکیڈمی <span class="en">Dar-E-Elmia Academy</span></h3><p>علم، تربیت اور روشن مستقبل کے لیے ایک تعلیمی پلیٹ فارم۔<br><span class="en">A platform for knowledge, character building and a bright future.</span></p></div>
+<div><h3>اہم لنکس <span class="en">Quick Links</span></h3><p><a href="#admission">داخلہ / Admission</a><br><a href="#fees">فیس / Fee</a><br><a href="#classes">کلاسز / Classes</a></p></div>
+<div><h3>رابطہ <span class="en">Contact</span></h3><p>03345034355<br>dareelmia786@gmail.com<br>پرنسپل: تاج محمد<br><span class="en">Principal: Taj Muhammad</span></p></div>
+</div>
+<div class="copy">© 2026 دارِ علمیہ اکیڈمی — جملہ حقوق محفوظ ہیں۔</div>
+</footer>
+
+<div class="modal" id="modal"><div class="modalbox"><button class="close" onclick="closeModal()">×</button><h2 style="color:#092b52">درخواست موصول ہو گئی</h2><p style="margin-top:10px">آپ کی ڈیمو داخلہ درخواست تیار ہو گئی ہے۔ حقیقی آن لائن فارم کے لیے اسے ویب سرور اور ڈیٹا بیس سے جوڑنا ہوگا۔</p><button class="btn primary" onclick="closeModal()">ٹھیک ہے</button></div></div>
+
+<script>
+function submitForm(e){e.preventDefault();document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+</script>
+</body>
+</html>
